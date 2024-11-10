@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naza Hub</title>
+
+    <script src="./OrderJS.js" defer></script>
+
+    <link rel="icon" href="./ media/my photo.jpg">
+    <link rel="stylesheet" href="OrderCss.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="snow"></div>
+    <header>
+        <div class="container">
+            <div class="Nazwa">
+                <span class="votv">Naza</span>
+                <span class="hub">Hub)</span>
+            </div>
+                    <div class="comand">
+                        <button onclick="location.href='../index.html'" class="contract"><img src='./ media/homepng.png' alt="Info" /></button>
+                        <button onclick="location.href='../Conditions/ConditionsHtml.html'" class="contract"><img src='./ media/contract.png' alt="Contract" /></button>
+                        <button onclick="location.href='../Info/InfoHtml.html'" class="info"><img src='./ media/info.png' alt="Info" /></button>
+                    </div>  
+        </div>
+    </header>
+
+            <main>
+            <p> <br>Добрий день, тут ви можете створити своє замовлення, через котрий час я зв’яжуся з вами використовуючи данні що ви вписали.</p>
+            
+
+
+
+            <div class="modul" id="modul">
+                <div class="modul_box">
+                    <p> Якщо у вас є бажання підтримати автора то ось дані:</p>
+                    <img src="./ media/Monobank.png"/> <p style="margin-top: -54px; margin-left: 25px; font-size: 18px;">Monobank - 4441 1111 6548 1916</p>
+                    <img src="./ media/Monobank.png"/> <p style="margin-top: -54px; margin-left: 25px; font-size: 18px;">Monobank - 4441 1111 7071 7312</p>
+                    <p> буду вам буже вдячний)</p>
+                    <button id="closemodul">Закрити</button>
+                </div>
+            </div>
+
+            <div id="Soop">
+                <div class="Soop_box">
+                    <p class="zagol">Ваше повідомлення надіслано</p>
+                    <p class="text">Очікуйте відповіді.</p>
+                </div>
+            </div>
+
+
+            <form id="orderForm">
+                <input type="text" placeholder="Telegram Username (@...)" id="Username3" name="telegram">
+                <div class="or-divider">або</div>
+                <input type="email" placeholder="Email" id="email3" name="email">
+                <input type="text" placeholder="Як до вас звертатись?" id="name" name="name">
+                <textarea placeholder="Лаконічно опишіть що ви хочете отримати (опис вашого замовлення)" id="description" name="description"></textarea>
+                        <div class="faza">
+                            <label>
+                            <input type="checkbox" id="signature" name="signature" required>
+                            Я прочитав, та погоджуюсь з умовами.
+                            </label>
+                        </div>
+                <button name="submit" id="okO" disabled><img src="./ media/send-svgrepo-com.png" width="30px"/></button>
+            </form>
+
+
+            </main>
+                    
+                <div id="footer-trigger"></div>
+                    <footer id="footer">
+                        <div class="social-links">
+                            <p>Соц-мережі автора сайта:</p>
+                            <div class="social-item">
+                                <img src="./ media/640px-Telegram_Messenger.png" width="30px"/>
+                                <p> - @fikys_is</p>
+                            </div>
+                            <div class="social-item">
+                                <img src="./ media/tiktok-icon-free-png.webp" width="30px"/>
+                                <p> - @fikys_is_ak</p>
+                            </div>
+                        </div>
+                        <button id="openmodul">Підтримати автора</button>
+                    </footer>
+
+<script src="./script.js" defer></script>
+</body>
+</html>
