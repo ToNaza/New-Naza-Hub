@@ -104,24 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-document.addEventListener("DOMContentLoaded", () => {
-    const footer = document.getElementById("footer");
-    const footerTrigger = document.getElementById("footer-trigger");
-  
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          footer.classList.add("visible"); // Показати футер
-        } else {
-          footer.classList.remove("visible"); // Сховати футер, якщо він більше не видимий
-        }
-      });
-    }, {
-      threshold: 1.0 // Тільки коли весь footer-trigger буде в полі зору
-    });
-  
-    observer.observe(footerTrigger);
-  });
 
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -146,3 +128,22 @@ document.addEventListener("DOMContentLoaded", () => {
         console.error("One or more elements not found");
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const footer = document.getElementById("footer");
+    const footerTrigger = document.getElementById("footer-trigger");
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          footer.classList.add("visible"); // Показати футер
+        } else {
+          footer.classList.remove("visible"); // Сховати футер, якщо він більше не видимий
+        }
+      });
+    }, {
+      threshold: 1.0 // Тільки коли весь footer-trigger буде в полі зору
+    });
+  
+    observer.observe(footerTrigger);
+  });
