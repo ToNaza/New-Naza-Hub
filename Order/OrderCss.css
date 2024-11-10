@@ -118,7 +118,7 @@ main{
 
 
 #footer-trigger {
-    margin-top: 120px;
+    margin-top: 130px;
     height: 1px; /* Маленька висота */
 }
 
@@ -142,7 +142,7 @@ main{
 /* Медіа-запит для екранів 580px і менше */
 @media (max-width: 585px) {
     #footer-trigger {
-        margin-top: 170px; /* Збільшений відступ */
+        margin-top: 180px; /* Збільшений відступ */
     }
 }
 
