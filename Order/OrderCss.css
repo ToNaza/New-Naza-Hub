@@ -139,10 +139,10 @@ main{
     transform: translateY(0);
 }
 
-/* Медіа-запит для екранів 580px і менше */
 @media (max-width: 585px) {
     #footer-trigger {
-        margin-top: 170px; /* Збільшений відступ */
+        margin-top: 170px;
+        height: 20px; /* Збільшена висота */
     }
 }
 
