@@ -195,6 +195,14 @@ main{
     background-color: hsl(0, 100%, 65%);
 }
 
+.nnn1 img{
+    margin-bottom: 10px;
+}
+
+.nnn2 img{
+ margin-bottom: 10px;
+}
+
 
 .modul.open {
     visibility: visible;
